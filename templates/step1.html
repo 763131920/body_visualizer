@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% include 'flashed_message.html' %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="../static/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+    <!-- DATE-PICKER -->
+    <link rel="stylesheet" href="../static/vendor/date-picker/css/datepicker.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../static/css/step1.css">
+    <link rel="Bookmark" href="../static/images/muscle.png" /> 
+    <link rel="shortcut icon" href="../static/images/muscle.png" /> 
+    <link rel="icon" href="../static/images/muscle.png" />
+    <title>Body Virtualisation APP - Step 1 </title>
+</head>
+
+<body>
+    <div class="form-box">
+        <form class="register-box" action="/step1" method='POST'>
+            <h1> Select your Age and Gender!! </h1>
+            <div class="ageSlider">
+                <p>Please enter your age</p>
+                <input type="range" name="age" min="12" max="100" value="18" class="slider" id="ageRange" oninput="showAge.innerText=this.value">
+                <p id="showAge">18</p>
+            </div>
+            <div class="gender">
+                <p>Please choose your gender</p>
+                <input class="mf" type="radio" id="male" name="gender" value="male" required>
+                <label for="male">
+                    <img src="../static/images/male.png" alt="male">
+                </label>
+                <input class="mf" type="radio" id="female" name="gender" value="female">
+                <label for="female">
+                    <span>
+                        <img src="../static/images/female.png" alt="female">
+                    </span>
+                </label>
+            </div>
+            <button>
+                Next Step
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

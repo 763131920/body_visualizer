@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Comic Sans MS", serif;
+}
+
+
+body {
+    background-image: url("../images/background1.png");
+    background-size: auto;
+}
+
+
+/* Title */
+.title {
+    width: 100%;
+    height: 100px;
+
+    /* overflow: hidden; */
+    background-color: transparent;
+    color: #f6f6f6;
+    font-weight: bold;
+    text-shadow: rgb(164, 189, 199) 4px 0 0, rgb(164, 189, 199) 0 4px 0, rgb(164, 189, 199) -4px 0 0, rgb(164, 189, 199) 0 -4px 0;
+    text-align: center;
+    margin: center;
+    margin-top: -10px;
+}
+
+.title h1 {
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 100px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+/* Main Area*/
+.main {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: 710px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.main #canvas {
+    margin-left: 50px;
+    float: left;
+    width: 450px;
+    height: 570px;
+    border-width: 1px;
+    background-color: white;
+}
+
+
+/* Right */
+
+.main .right {
+    float: left;
+    width: 500px;
+    height: 500px;
+    /* margin-top: -15px; */
+    margin-left: 70px;
+    /*cursor: pointer;*/
+}
+
+.right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    position: relative;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 12px;
+    width: 80px;
+}
+
+.icon_name {
+    width: 130px;
+}
+
+.icon_name p {
+    font-size: 19px;
+}
+
+ul #item_name p {
+    width: 200px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+hr {
+    margin-top: 23px;
+    border-top: 2px double rgb(202, 147, 148);
+    margin-bottom: 30px;
+}
+
+.next button {
+    margin-top: 8px;
+    margin-left: 160px;
+    width: 50%;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(227, 167, 168);
+    padding: 15px;
+    color: rgb(227, 167, 168);
+    letter-spacing: 2px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.next button:hover {
+    background-color: rgb(255, 206, 206);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+
+/* preloader */
+
+#preloader {
+    background: black url(../images/2.gif) no-repeat center center;
+    background-size: 50%;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% include 'flashed_message.html' %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="../static/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+    <!-- DATE-PICKER -->
+    <link rel="stylesheet" href="../static/vendor/date-picker/css/datepicker.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="Bookmark" href="../static/images/muscle.png" /> 
+    <link rel="shortcut icon" href="../static/images/muscle.png" /> 
+    <link rel="icon" href="../static/images/muscle.png" />
+    <title>Body Virtualisation APP - Login</title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="form-box">
+            <!--            <div class="login-box">-->
+            <form class="login-box" action="/login" method='POST'>
+                <h1>Login</h1>
+                <input name="modelname" type="modelname" placeholder="Login with your name">
+                <button>
+                    Login
+                </button>
+            </form>
+            <!--            </div>-->
+
+            <!--            <div class="register-box hidden">-->
+            <form class="register-box hidden" action="/register" method='POST'>
+                <h1>Register</h1>
+                <input name="modelname" type="modelname" placeholder="Enter a unique name">
+                <button>
+                    Sign Up
+                </button>
+            </form>
+            <!--            </div>-->
+        </div>
+
+        <!-- Left Box: Login -->
+        <div class="con-box left">
+            <h2>
+                <span> Body Virtualization </span>
+            </h2>
+
+            <p>Body Virtualization is an app that ...</p>
+            <img src="../static/images/muscle.png">
+            <p>
+                Already Have an account?
+            </p>
+            <button id="login">
+                Login Now
+            </button>
+
+        </div>
+
+        <!-- Right Box: Register -->
+        <div class="con-box right">
+            <h2>
+                <span> Body Virtualization </span>
+            </h2>
+
+
+            <p>Body Virtualization is an app that ...</p>
+            <img src="../static/images/muscle.png">
+            <p>
+                Don't have an account?
+            </p>
+            <button id="register">
+                Sign Up Now
+            </button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+        let login = document.getElementById("login");
+        let register = document.getElementById("register");
+        let form_box = document.getElementsByClassName("form-box")[0];
+        let register_box = document.getElementsByClassName("register-box")[0];
+        let login_box = document.getElementsByClassName("login-box")[0];
+        register.addEventListener('click', () => {
+            form_box.style.transform = 'translateX(74%)';
+            login_box.classList.add('hidden');
+            register_box.classList.remove('hidden');
+        })
+        login.addEventListener('click', () => {
+            form_box.style.transform = 'translateX(0%)';
+            register_box.classList.add('hidden');
+            login_box.classList.remove('hidden');
+        })
+    </script>
+
+
+
+</body>
+
+</html>

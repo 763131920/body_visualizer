@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS", serif;
+}
+
+
+body {
+    background-image: url("../images/background1.png");
+    font-size: .875rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.h2 {
+    font-size: 48px;
+}
+
+.main{
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+
+.main-title {
+    /* overflow: hidden; */
+    background-color: transparent;
+    color: #f6f6f6;
+    text-shadow: rgb(164, 189, 199) 4px 0 0, rgb(164, 189, 199) 0 4px 0, rgb(164, 189, 199) -4px 0 0, rgb(164, 189, 199) 0 -4px 0;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 1200px;
+    height: 120px;
+}
+
+/* Button */
+
+
+.last button{
+    float: left;
+    margin-top: 20px;
+    width: 150px;
+    height: 75px;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(227, 167, 168);
+    padding: 15px;
+    color: rgb(227, 167, 168);
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+.last button:hover {
+    background-color: rgb(255, 206, 206);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+.main-title-text {
+    margin-left: 130px;
+    margin-right: 100px;
+    float: left;
+}
+
+.logout button{
+    float: right;
+    margin-top: 20px;
+    width: 150px;
+    height: 75px;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(227, 167, 168);
+    padding: 15px;
+    color: rgb(227, 167, 168);
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    background-color: rgb(255, 206, 206);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* comparison */
+
+.comparison {
+    float: left;
+    width: 1200px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(222, 234, 237);
+    border-radius: 20px;
+    
+}
+.comparison .left{
+    float: left;
+    width: 400px;
+    height: 600px;
+    border-width: 1px;
+    background-color: pink;
+}
+
+.comparison .left img{
+    width: 400px;
+    height: 600px;
+}
+.comparison .right img {
+    width: 400px;
+    height: 600px;
+}
+
+.comparison .right{
+    float: left;
+    width: 400px;
+    height: 600px;
+    border-width: 1px;
+}
+
+
+#before_canvas{
+    float: left;
+    width: 400px;
+    height: 500px;
+    border-width: 1px;
+    background-color: white;
+}
+
+#after_canvas{
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
+    background-color: white;
+}
+
+
+
+
+
+
+/* preloader */
+
+#preloader {
+    background: #66ceff url(../images/cat.gif) no-repeat center center;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* angle button */
+
+.angle_button {
+    float: left;
+    margin-right: 30px;
+    margin-top: 50px;
+    width: 150px;
+    height: 500px;
+}
+
+.angle_button button {
+    height: 50px;
+    width: 190px;
+    margin-bottom: 50px;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(227, 167, 168);
+    color: rgb(227, 167, 168);
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+.angle_button button:hover {
+    background-color: rgb(255, 206, 206);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+.basic-box {
+    margin: 0;
+    float: left;
+    width: 1180px;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.basic-text  {
+    text-align: left;
+    font-size: 28px;
+    color: rgb(80, 120, 132);
+    background-color:rgb(209, 225, 230);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(227, 167, 168, 0.6);
+    padding: 0px;
+}
+
+.basic-text-title {
+    margin: 0 auto;
+    height: 80px;
+    width: 400px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:rgb(209, 225, 230);
+    border-style: solid;
+    border-width: 3px;
+    border-bottom: 0px;
+    border-color: rgba(227, 167, 168, 0.6);
+}
+
+.important_text {
+    font-size: 30px; 
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+.header_text {
+    padding-left: 50px;
+}
+.normal_text {
+    padding-left: 200px;
+}
+
+/* Part 2 */
+
+ .report_text {
+    width: 600px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.important_val {
+    font-size: 24px; 
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+
+
+.sub-header{
+    
+    text-align: center;
+    width: 600px;    
+    margin-right: 50px;
+}
+
+.sub-header img{
+    width: 50px;
+    height: 50px;
+}
+
+#mytitle {
+    width: 450px;
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    padding: 4px;
+    border: solid 1px #ced5d3;
+    border-radius:10px !important;
+    text-align: center;
+    line-height: 30px;
+    background-color: wheat;
+    opacity: .8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.canvas {
+    float: left;
+    margin-left: 50px;
+    font-size: 24px;
+    background-color: transparent;
+    width: 400px;
+}
+
+.canvas-text {
+    text-align: center;
+    width: 400px;
+    height: 50px;
+}
+
+
+
+.part-two {
+    float: left;
+    width: 1200px;
+    height: 1100px;
+    margin-bottom: 50px;
+    background-color: rgb(222, 234, 237);
+    border-radius: 20px;
+}
+
+.part-two-first {
+    margin-bottom: 30px;
+}
+
+.chartSection {
+    float: left;
+    width: 600px;
+}
+
+.part-three {
+    float: left;
+    width: 1200px;
+    padding: 20px;
+    background-color: rgb(222, 234, 237);
+    border-radius: 20px;
+}
+
+.part-three h2 {
+    text-align: center;
+}
+
+.second-title {
+    color: #f6f6f6;
+    text-shadow: rgb(164, 189, 199) 4px 0 0, rgb(164, 189, 199) 0 4px 0, rgb(164, 189, 199) -4px 0 0, rgb(164, 189, 199) 0 -4px 0;
+    font-size: 32px;
+    letter-spacing: 3px; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
